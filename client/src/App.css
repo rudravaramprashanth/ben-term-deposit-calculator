@@ -1,0 +1,141 @@
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.app-header h1 {
+  color: #172b4d;
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.app-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.calculator {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.calculator h2 {
+  color: #172b4d;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #ffffff;
+  color: #172b4d;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+.calculator button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #172b4d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background: #254477;
+}
+
+.calculator button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 28px;
+  padding: 24px;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.result h3 {
+  color: #172b4d;
+  margin-bottom: 16px;
+}
+
+.result p {
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+.result h2 {
+  margin: 16px 0 0;
+  color: #166534;
+  font-size: 22px;
+}
+
+.error-message {
+  margin-top: 16px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.app-footer {
+  margin-top: 32px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 28px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 25px;
+  }
+
+  .calculator {
+    padding: 22px;
+  }
+}
